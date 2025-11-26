@@ -36,7 +36,24 @@ __PROCEDURE:__
 
 __PROGRAM:__
 
+
+
+% Two sample signals (you can change values)
+x = [1 2 3 4 5];
+y = [2 3 4 5 6];
+
+% Cross correlation
+[c, lag] = xcorr(x, y);
+
+% Plotting
+stem(lag, c, 'LineWidth', 2);
+title('Cross Correlation');
+xlabel('Lag');
+ylabel('Amplitude');
+grid on;
+
 __OUTPUT GRAPH:__
+![WhatsApp Image 2025-11-26 at 20 31 35_683b76c6](https://github.com/user-attachments/assets/22678095-c941-4379-a251-d90a9b591faa)
 
 __RESULT:__
 
